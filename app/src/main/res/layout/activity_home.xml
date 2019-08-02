@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:elevation="@dimen/toolbar_elevation">
+
+        <TextView
+            android:id="@+id/serviceButton"
+            android:layout_width="@dimen/service_button_width"
+            android:layout_height="@dimen/service_button_height"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingEnd="@dimen/service_button_horizontal_margin"
+            android:paddingStart="@dimen/service_button_horizontal_margin"
+            android:text="@string/start_service"
+            android:textColor="@color/colorPrimary"/>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/recycler_view_margin"
+        android:layout_marginStart="@dimen/recycler_view_margin"
+        android:layout_marginTop="@dimen/recycler_view_margin"
+        tools:context="com.tinoba.template.ui.home.HomeActivity">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
